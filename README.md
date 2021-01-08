@@ -42,3 +42,6 @@ IsValid("AbTp9!fok") // true
 - SOLID
 
 ## Execução
+- Você precisará do Visual Studio 2019 e do .NET Core SDK mais recentes.
+- *** Verifique se você instalou a mesma versão do runtime (SDK) descrita em global.json ***
+- O SDK e as ferramentas mais recentes podem ser baixados em https://dot.net/core.
