@@ -12,6 +12,7 @@ Considere uma senha sendo válida quando a mesma possuir as seguintes definiçõ
   - Considere como especial os seguintes caracteres: !@#$%^&*()-+
 - Não possuir caracteres repetidos dentro do conjunto
 
+```
 Exemplo:  
 IsValid("") // false  
 IsValid("aa") // false  
