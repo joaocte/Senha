@@ -1,6 +1,6 @@
 ﻿namespace Senha.Application.Output
 {
-    class ValidarSenhaOutput
+    public class ValidarSenhaOutput
     {
         public bool SenhaValida { get; set; }
     }

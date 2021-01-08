@@ -1,4 +1,5 @@
 ﻿using Senha.Application.Inputs;
+using Senha.Application.Output;
 using System.Threading.Tasks;
 
 namespace Senha.Application.UseCases.ValidarSenhaUseCase
@@ -10,9 +11,9 @@ namespace Senha.Application.UseCases.ValidarSenhaUseCase
             //TODO: Implementar quando estiver algo mais complexo.
         }
 
-        public async Task<bool> ExecuteAsync(ValidarSenhaInput input)
+        public async Task<ValidarSenhaOutput> ExecuteAsync(ValidarSenhaInput input)
         {
-            return input.Senha.IsValid();
+            return new ValidarSenhaOutput { SenhaValida = input.Senha.IsValid() };
         }
     }
 }

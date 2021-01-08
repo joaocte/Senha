@@ -28,17 +28,17 @@ namespace Senha.Domain.Entities
                    && !ValidarEspaco();
         }
 
-        private bool ValidarCaracteres()
+        protected bool ValidarCaracteres()
         {
             return Regex.IsMatch(_senha, @"^(?=(.*\d){1})(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z\d]).{8,}$");
         }
 
-        private bool ValidarDuplicaidade()
+        protected bool ValidarDuplicaidade()
         {
             return _senha.GroupBy(x => x).Any(g => g.Count() > 1);
         }
 
-        private bool ValidarEspaco()
+        protected bool ValidarEspaco()
         {
             return Regex.IsMatch(_senha, @" ");
         }

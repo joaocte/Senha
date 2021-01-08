@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Senha.Application.Inputs;
 using Senha.Application.UseCases.ValidarSenhaUseCase;
 using System.Threading.Tasks;
@@ -14,19 +13,15 @@ namespace Senha.Api.Controllers
     {
 
 
-        private readonly ILogger<SenhaController> _logger;
-
-        public SenhaController(ILogger<SenhaController> logger)
-        {
-            _logger = logger;
-        }
 
         [HttpGet]
         [Route("{senha}/validar")]
-        public Task<bool> ValidarSenha([FromRoute] string senha, [FromServices] IValidarSenhaUseCase validarSenhaUseCase)
+        public async Task<bool> ValidarSenha([FromRoute] string senha, [FromServices] IValidarSenhaUseCase validarSenhaUseCase)
         {
             var input = new ValidarSenhaInput { Senha = senha };
-            return validarSenhaUseCase.ExecuteAsync(input);
+            var senhaValida = await validarSenhaUseCase.ExecuteAsync(input);
+
+            return senhaValida.SenhaValida;
         }
     }
 }

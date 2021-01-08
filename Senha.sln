@@ -13,15 +13,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Domain", "04 - Domain"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Infra", "05 - Infra", "{FF11D914-2331-4612-AF33-68ED4A2CC277}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senha.Api", "Senha.Api\Senha.Api.csproj", "{01A887BB-396F-48BB-B3E6-BEACC4372262}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senha.Api", "Senha.Api\Senha.Api.csproj", "{01A887BB-396F-48BB-B3E6-BEACC4372262}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senha.Application", "Senha.Application\Senha.Application.csproj", "{DE7A79FB-9852-4E7F-8FDE-A1971838FBA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senha.Application", "Senha.Application\Senha.Application.csproj", "{DE7A79FB-9852-4E7F-8FDE-A1971838FBA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senha.Domain", "Senha.Domain\Senha.Domain.csproj", "{230B3252-2E5A-4F16-BB6E-D5B15ADDEB3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senha.Domain", "Senha.Domain\Senha.Domain.csproj", "{230B3252-2E5A-4F16-BB6E-D5B15ADDEB3D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - CrossCutting", "5.1 - CrossCutting", "{3C74247E-F820-4561-A357-32E53DCF3200}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senha.Infra.CrossCutting.IoC", "Senha.Infra.CrossCutting.IoC\Senha.Infra.CrossCutting.IoC.csproj", "{9ADDF3E5-AA06-44E4-B1FE-74938FFE2FD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Senha.Infra.CrossCutting.IoC", "Senha.Infra.CrossCutting.IoC\Senha.Infra.CrossCutting.IoC.csproj", "{9ADDF3E5-AA06-44E4-B1FE-74938FFE2FD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 - Tests", "06 - Tests", "{7F355631-AE70-40BE-8A52-8356D127696B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senha.Tests", "Senha.Tests\Senha.Tests.csproj", "{0D11F987-6A7A-4A39-AD41-0BF060806FC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,10 @@ Global
 		{9ADDF3E5-AA06-44E4-B1FE-74938FFE2FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ADDF3E5-AA06-44E4-B1FE-74938FFE2FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ADDF3E5-AA06-44E4-B1FE-74938FFE2FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D11F987-6A7A-4A39-AD41-0BF060806FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D11F987-6A7A-4A39-AD41-0BF060806FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D11F987-6A7A-4A39-AD41-0BF060806FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D11F987-6A7A-4A39-AD41-0BF060806FC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +63,7 @@ Global
 		{230B3252-2E5A-4F16-BB6E-D5B15ADDEB3D} = {CE13282F-4DD0-49E9-B9FD-00458033176D}
 		{3C74247E-F820-4561-A357-32E53DCF3200} = {FF11D914-2331-4612-AF33-68ED4A2CC277}
 		{9ADDF3E5-AA06-44E4-B1FE-74938FFE2FD2} = {3C74247E-F820-4561-A357-32E53DCF3200}
+		{0D11F987-6A7A-4A39-AD41-0BF060806FC2} = {7F355631-AE70-40BE-8A52-8356D127696B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3955D66C-B66C-4E42-8A92-95D345E3CC5C}
