@@ -26,14 +26,14 @@ IsValid("AbTp9!fok") // true
 
 > **_Nota:_**  Espaços em branco não devem ser considerados como caracteres válidos.
 
-##Tecnologia:
+## Tecnologia:
 
 - ASP.NET Core 3.1 (with .NET Core 3.1)
 - ASP.NET MVC Core 
 - .NET Core Native DI
 - Swagger UI with JWT support
 
-##Arquitetura
+## Arquitetura
 
 - Testes de unidade / integração
 - Abstração, acoplamento, extensibilidade e coesão
@@ -41,4 +41,4 @@ IsValid("AbTp9!fok") // true
 - Clean Code
 - SOLID
 
-##Execução
+## Execução
